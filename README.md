@@ -96,6 +96,26 @@ Exemplo:
 kubectl rollout restart deployment oauth -n govbr
 ```
 
+## 7. Desabilitando o modo protected
+
+Após a configuração, caso o erro de modo protected ocorra, faça:
+
+```bash
+CONFIG SET protected-mode no
+```
+
+Para persistir:
+
+```bash
+CONFIG REWRITE
+```
+
+Para confirmar:
+
+```bash
+CONFIG GET protected-mode
+```
+
 ---
 
 # Verificações
